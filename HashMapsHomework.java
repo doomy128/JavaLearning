@@ -1,5 +1,7 @@
+//TODO Somethings's missing here...
 
 public class HashMapsHomework {
+	//DO NOT USE INTEGERS FOR KEYS OR VALUES
 	//1. Create and declare a HashMap
 	
 	//2. Put an object in a HashMap
