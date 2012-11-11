@@ -1,11 +1,13 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 
 public class HashMaps {
 	//Declaring a HashMap: HashMap<Key, Value>
 	//You can use any data type for a HashMap
-	//When using a primitive data type,you need to use it's wrapper class
+	//When using a primitive data type,you need to use 
+	//it's wrapper class
 	static Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 	static Map<Integer, Map<Integer,Integer>> map2d = new HashMap<Integer, Map<Integer,Integer>>();	
 	public static void main(String[] args) {
@@ -27,6 +29,16 @@ public class HashMaps {
 		System.out.println(map2d.get(1).get(1));
 		System.out.println(map2d.get(1).get(2));
 		System.out.println(map2d.get(1).get(3));
+		
+		//Puts the HashMap keys into a Set of Integers,
+		//then turns the set into an array
+		Set<Integer> keySet = map.keySet();
+		Integer[] keyArray = new Integer[0];
+		keyArray = keySet.toArray(keyArray);
+		//Print all the keys
+		for(Integer i : keyArray){
+			System.out.println(i);
+		}
 	}
 
 }
